@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include trello *.css
+recursive-include trello *.csv
+recursive-include trello *.html
+recursive-include trello *.ico
+recursive-include trello *.js
+recursive-include trello *.json
+recursive-include trello *.md
+recursive-include trello *.png
+recursive-include trello *.py
+recursive-include trello *.svg
+recursive-include trello *.txt
+recursive-exclude trello *.pyc

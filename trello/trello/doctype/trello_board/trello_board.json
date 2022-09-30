@@ -1,0 +1,87 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:board_name",
+ "creation": "2022-08-22 10:27:17.333633",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "board_name",
+  "board_id",
+  "column_break_3",
+  "project",
+  "b_name",
+  "board_members_section",
+  "trello_board_members"
+ ],
+ "fields": [
+  {
+   "fieldname": "board_name",
+   "fieldtype": "Data",
+   "label": "Board Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "board_id",
+   "fieldtype": "Data",
+   "label": "Board ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "b_name",
+   "fieldtype": "Data",
+   "label": "Board Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "board_members_section",
+   "fieldtype": "Section Break",
+   "label": "Board Members"
+  },
+  {
+   "depends_on": "eval:doc.board_id",
+   "fieldname": "trello_board_members",
+   "fieldtype": "Table",
+   "label": "Trello Board Members",
+   "options": "Trello Board Members"
+  },
+  {
+   "description": "(Optional)",
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-08-30 10:52:01.357112",
+ "modified_by": "Administrator",
+ "module": "trello",
+ "name": "Trello Board",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
